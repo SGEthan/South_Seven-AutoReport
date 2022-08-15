@@ -127,6 +127,8 @@ class Report(object):
         resp=session.post(url, data=data, headers=headers)
         #print(resp)
         res = session.get("https://weixine.ustc.edu.cn/2020/apply/daliy/i?t=3")
+        print("data:")
+        print(data)
         if(res.status_code < 400 and (res.url == "https://weixine.ustc.edu.cn/2020/upload/xcm" or res.url == "https://weixine.ustc.edu.cn/2020/apply/daliy/i?t=3")):
             print("report success!")
         elif(res.status_code < 400 and res.url != "https://weixine.ustc.edu.cn/2020/upload/xcm"):
