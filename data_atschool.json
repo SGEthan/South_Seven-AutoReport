@@ -1,7 +1,7 @@
 {
     "juzhudi": "高新校区",
-    // "now_address": "1",
-    // "gps_now_address" : "",
+    "now_address": "1",
+    "gps_now_address" : "",
     "now_province": "340000",
     "gps_province": "",
     "now_city": "340100",
