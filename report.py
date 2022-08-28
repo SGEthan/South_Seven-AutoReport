@@ -147,7 +147,7 @@ class Report(object):
             can_upload_file = 1
             is_user_upload = 1
         try:
-            #print(self.phone, self.addr)
+            #print(self.phone, self.addr)ssss
             self.screenshot()
         except Exception as e:
             print(e)
