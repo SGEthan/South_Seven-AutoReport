@@ -64,7 +64,7 @@ class Report(object):
         opt.add_experimental_option('mobileEmulation', {'deviceName': 'Samsung Galaxy S8+'})
 
 
-        driver = webdriver.Chrome(options=opt)#此处填写chromedriver的路径
+        driver = webdriver.Chrome(options=opt) #此处填写chromedriver的路径
         driver.get(url)
         width = driver.execute_script("return document.documentElement.scrollWidth")
         height = driver.execute_script("return document.documentElement.scrollHeight")
