@@ -47,8 +47,10 @@ class Report(object):
             self.addr = addr
         
     def screenshot(self):
+        print("screenshot...")
         phone = self.phone
         addr = self.addr
+        print("phone is {}, addr is {}".format(phone, addr))
         addr_urlencode = urllib.parse.quote(addr)
         url = f"https://card.srpr.moe/cn-trip-card/#{phone}&{addr_urlencode}"
 
@@ -150,6 +152,7 @@ class Report(object):
             #print(self.phone, self.addr)ssss
             self.screenshot()
         except Exception as e:
+            print('error:', e)
             print(e)
             print('error!')
             can_upload_file = 0
